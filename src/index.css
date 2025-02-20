@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the slider */
+    align-items: center;
+    padding: 10px 0;
+}
+
+.custom-slider-runtime {
+    -webkit-appearance: none;
+    width: 100%; /* Set width to 75% */
+    height: 4px; /* Thin dark grey bar */
+    background: darkgrey; /* Dark grey default */
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-slider-sound {
+    -webkit-appearance: none;
+    width: 75%; /* Set width to 75% */
+    height: 4px; /* Thin dark grey bar */
+    background: darkgrey; /* Dark grey default */
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Track */
+.custom-slider::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 5px;
+}
+
+/* Thumb (Green circle) */
+.custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: green;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px; /* Align thumb properly */
+}
+
+/* For Firefox */
+.custom-slider::-moz-range-track {
+    height: 4px;
+    border-radius: 5px;
+}
+
+.custom-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: green;
+    border-radius: 50%;
+    cursor: pointer;
+}
